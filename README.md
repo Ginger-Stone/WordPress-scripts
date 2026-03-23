@@ -1,4 +1,8 @@
-# WordPress + WooCommerce Scaffold Script
+# WordPress scripts
+- WordPress + WooCommerce Scaffold Script
+- WordPress Plugin Packager (Include-Only, Production Ready)
+
+### WordPress + WooCommerce Scaffold Script
 
 This script provides a fast, automated way to scaffold a fully
 functional WordPress application with WooCommerce for testing
@@ -35,4 +39,33 @@ chmod +x scaffold-wp.sh
 Example:
 ```bash
 ./scaffold-wp.sh myshop.test 8.2 /path/to/wordpress.zip /path/to/woocommerce.zip
+```
+
+
+### WordPress Plugin Packager (Include-Only, Production Ready)
+
+This script creates a clean, installable ZIP archive of a
+WordPress plugin using an allowlist (include list).
+
+What it does:
+ - Copies only explicitly allowed files/directories
+ - Installs Composer dependencies in production mode (--no-dev)
+ - Optimizes autoloading for performance
+ - Shows a verification list of files to be packaged
+ - Prompts for confirmation before creating the ZIP
+ - Adds a packaging README file inside the zip
+
+ IMPORTANT:
+ - You SHOULD modify the INCLUDE_PATHS list below to match your
+   plugin structure. This script only includes what you specify.
+
+Usage:
+```bash
+chmod +x zip-plugin.sh
+./zip-plugin.sh <plugin_path> [output_dir]
+```
+
+Example:
+```bash
+./zip-plugin.sh /path/to/my-plugin /path/to/output
 ```
