@@ -4,6 +4,15 @@ This script provides a fast, automated way to scaffold a fully
 functional WordPress application with WooCommerce for testing
 and development.
 
+To test a WordPress Woo Commerce plugin, you need to test with multiple WordPress versions as well as Woo Commerce versions and PHP versions.
+
+Download WordPress and Woo Commerce using the links below:
+ - [WordPress release archive](https://wordpress.org/download/releases/) 
+ - [Woo Commerce release archive](https://github.com/woocommerce/woocommerce/releases)
+
+To Install PHP, use the link below:
+ - [PHP Downloads](https://www.php.net/downloads.php?usage=web&os=linux&osvariant=linux-ubuntu&version=8.2) 
+
 Before running this script, ensure you have installed and configured MySQL, Apache, and PHP.
 
 It performs the following:
